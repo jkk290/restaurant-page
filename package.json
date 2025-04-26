@@ -7,5 +7,22 @@
     "webpack": "^5.99.7",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.1"
-  }
+  },
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "Practice DOM manipulation by dynamically rendering a restaurant homepage!",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkk290/restaurant-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jkk290/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/jkk290/restaurant-page#readme"
 }

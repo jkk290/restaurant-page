@@ -4,5 +4,5 @@ import Header from "./header.js";
 import HomePage from "./homepage.js";
 
 Navbar.createNavButtons();
-Header.createHeader('Da Best Restaurant Ever!');
+Header.createHeader('Da Best Restaurant!');
 HomePage.createMainContent();
