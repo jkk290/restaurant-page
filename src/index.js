@@ -1,4 +1,4 @@
 import "./styles.css";
+import Header from "./header.js";
 
-
-alert("hello");
+Header.createHeader('The Best Restaurant Ever!');
