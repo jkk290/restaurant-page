@@ -1,3 +1,6 @@
+import HomePage from "./homepage";
+import Menu from "./menu";
+
 const Navbar = (function() {
     const navbarSection = document.querySelector('nav');
     
@@ -11,9 +14,19 @@ const Navbar = (function() {
         buttonHome.textContent = 'Home';
         buttonContact.textContent = 'Contact';
 
+        buttonHome.addEventListener('click', () => {
+            HomePage.createMainContent();
+        });
+
+        buttonMenu.addEventListener('click', () => {
+            Menu.createMenuContent();
+        });
+
         navbarSection.appendChild(buttonHome);
         navbarSection.appendChild(buttonMenu);
         navbarSection.appendChild(buttonContact);
+
+
 
     };
 

@@ -3,7 +3,7 @@ const HomePage = (function() {
     const contentSection = document.querySelector('#content');
 
     const createMainContent = function() {
-        contentSection.textContent = '';
+        contentSection.innerHTML = '';
 
         
         const mainContent = document.createElement('div');

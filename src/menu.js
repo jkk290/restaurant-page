@@ -3,7 +3,7 @@ const Menu = (function() {
     const contentSection = document.querySelector('#content');
 
     const createMenuContent = function() {
-        contentSection.textContent = '';
+        contentSection.innerHTML = '';
 
         const menuContent = document.createElement('div');
         contentSection.appendChild(menuContent);
@@ -14,26 +14,48 @@ const Menu = (function() {
 
         const menuItems = [];
 
+        console.log(menuItems);
+
         class MenuItem {
             constructor(name, price) {
                 this.name = name;
                 this.price = price;
             }
+
+            info() {
+                return `${this.name}............$ ${this.price}`;
+            };
         };
 
-        function addItem(name,price) {
-            let item = new MenuItem(name,price);
+        function addItem(name, price) {
+            let item = new MenuItem(name, price);
 
             menuItems.push(item);
         };
 
-        addItem('Dish 1', 5.00);
-        addItem('Dish 2', 4.00);
-        addItem('Drink 1', 2.00);
-        addItem('Drink 2', 1.00);
+        addItem('Dish 1', 5);
+        addItem('Dish 2', 4);
+        addItem('Drink 1', 2);
+        addItem('Drink 2', 1);
 
+        const menuItemsContainer = document.createElement('div');
+
+        menuItems.forEach((item) => {
+            const lineItem = document.createElement('p');
+
+            lineItem.textContent = item.info();
+            menuItemsContainer.appendChild(lineItem);
+        });
+
+        menuContent.appendChild(menuItemsContainer);
         
     };
 
+    return {
+        createMenuContent
+    }
+
 
 })();
+
+export default Menu;
