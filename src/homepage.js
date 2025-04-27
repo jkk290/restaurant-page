@@ -3,6 +3,9 @@ const HomePage = (function() {
     const contentSection = document.querySelector('#content');
 
     const createMainContent = function() {
+        contentSection.textContent = '';
+
+        
         const mainContent = document.createElement('div');
         mainContent.id = 'main-content';
         mainContent.innerHTML = "<h2>Da best local kine food!</h2>" +
