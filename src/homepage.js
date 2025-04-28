@@ -8,8 +8,11 @@ const HomePage = (function() {
         
         const mainContent = document.createElement('div');
         mainContent.id = 'main-content';
-        mainContent.innerHTML = "<h2>Da best local kine food!</h2>" +
-                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repellat rerum neque? Omnis amet alias vero dolorem voluptatibus.";
+
+        const description = document.createElement('div');
+        description.id = 'description';
+        description.innerHTML = "<h2>Da best local kine food!</h2>" +
+                                "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repellat rerum neque? Omnis amet alias vero dolorem voluptatibus.</p>";
 
         const hours = document.createElement('div');
         hours.id = 'hours';
@@ -35,6 +38,7 @@ const HomePage = (function() {
 
 
         contentSection.appendChild(mainContent);
+        mainContent.appendChild(description);
         mainContent.appendChild(hours);
         mainContent.appendChild(location);
     };

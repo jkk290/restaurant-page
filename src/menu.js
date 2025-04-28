@@ -6,6 +6,7 @@ const Menu = (function() {
         contentSection.innerHTML = '';
 
         const menuContent = document.createElement('div');
+        menuContent.id = 'menu';
         contentSection.appendChild(menuContent);
 
         const menuTitle = document.createElement('h3');
@@ -39,6 +40,7 @@ const Menu = (function() {
         addItem('Drink 2', 1);
 
         const menuItemsContainer = document.createElement('div');
+        menuItemsContainer.id = 'menu-items-container'
 
         menuItems.forEach((item) => {
             const lineItem = document.createElement('p');
