@@ -6,6 +6,7 @@ const Contact = (function() {
         contentSection.innerHTML = '';
 
         const contactContent = document.createElement('div');
+        contactContent.id = 'contact';
         contentSection.appendChild(contactContent);
 
         const contactTitle = document.createElement('h3');
